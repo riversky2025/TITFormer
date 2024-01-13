@@ -117,5 +117,5 @@ python test.py
 This codebase is based on the following open-source projects. We thank their authors for making the source code publically available.
 
 - [IJCAI2022 UMF-CMGR](https://github.com/wdhudiekou/UMF-CMGR)
-- [Comprehensive and Delicate: An Efficient Transformer for Image Restoration (CVPR 2023)](https://github.com/XLearning-SCU/2023-CVPR-CODE)@article{DBLP:journals/corr/abs-1810-04805,
+- [Comprehensive and Delicate: An Efficient Transformer for Image Restoration (CVPR 2023)](https://github.com/XLearning-SCU/2023-CVPR-CODE)
 - [bert-base-uncased ](https://huggingface.co/bert-base-uncased)
