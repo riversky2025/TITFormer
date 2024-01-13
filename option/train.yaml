@@ -1,0 +1,29 @@
+
+sigma: 15
+runsetting:
+#  new continue
+  command: new
+  filepath: 'run/new-tcf-space-Ima-RGB-C-t11-i11 2023.11.15--22-56-31'
+  device: cuda:0
+dataset:
+  #ImageDataset_XYZ ImageDataset_sRGB PPR_ImageDataset_sRGB
+  name: ImageDataset_sRGB
+  data_root: data
+#  target_c target_a target_b expertC
+  version: expertC
+  batch_size: 1
+  n_cpu: 1
+train:
+  seed: 15
+  channel: 3
+  device: cuda:0
+  n_epochs: 30
+  print_each_step: 5
+  num_blocks: [ 2,3,1 ]
+  num_shuffles: [ 8,4,2 ]
+  ch_sp_squeeze: [ [ 4, 8 ], [ 4, 4 ],[ 4, 2 ] ]
+  expan_att_chans: 4
+  embed_dim: 32
+  patch_size: 64
+  lr: 0.0002
+  schedule_iter: 50

@@ -1,0 +1,10 @@
+runsetting:
+  epoch: 300
+  filepath: 'run/PPR-RGB-a'
+  device: cuda:0
+args:
+  dataset:
+    data_root:
+#      ["input",'result','label','infrared']
+output: ["input",'label','infrared']
+

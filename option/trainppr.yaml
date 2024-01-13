@@ -1,0 +1,37 @@
+
+#noise level in denoising or compression level in jpeg compression artifact reduction
+sigma: 15
+
+
+runsetting:
+#  new continue
+  command: new
+  filepath: 'run/PPR-RGB-a-t11-i11 2023.11.16--23-21-54'
+  device: cuda:0
+dataset:
+#PPR_ImageDataset_sRGB
+  name: PPR_ImageDataset_sRGB
+  data_root: data
+#  target_c target_a target_b
+  version: target_c
+  batch_size: 1
+  n_cpu: 1
+train:
+  seed: 15
+  channel: 3
+  device: cuda:0
+  n_epochs: 300
+  print_each_step: 5
+#  [4,6,6,2]
+  num_blocks: [2,3,1]
+#  [16, 8, 4, 2]
+  num_shuffles: [ 8,4,2]
+#  [[4, 8], [4, 4], [4, 2], [4, 1]]
+  ch_sp_squeeze: [[4, 8], [4, 4],[4, 2]]
+#  4
+  expan_att_chans: 4
+#  64
+  embed_dim: 32
+  patch_size: 64
+  lr: 0.000005
+  schedule_iter: 100
