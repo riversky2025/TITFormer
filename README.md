@@ -80,6 +80,12 @@ data/PPR10K
     train_aug.txt
     test.txt
 ```
+### expend data
+Download link for simulating infrared image and text data
+| Dataset | Link |
+|---------|------|
+| FiveK   | [Google Drive](https://drive.google.com/file/d/1VvVqTw6GIw34JRCNHGro9U9iN4el-1UC/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/11pDcqu6PqgKpYi6MARFvWQ?pwd=8093) |
+| ppr10K   | [Google Drive](https://drive.google.com/file/d/1kfS7SfGbIYSwnbliv0zQDQD1WKPYgUDh/view?usp=sharing)  /[Baidu](https://pan.baidu.com/s/1uOi1eCtVR9qaCK0YcHdLXQ?pwd=65p9)  |
 
 
 
@@ -101,8 +107,22 @@ python trainppr.py
 ```
 
 ## Testing
-
 You can test models in `./run/`. To conduct testing, please use the following commands:
+
+
+```shell
+python test.py
+```
+### Trained models
+We provide trained models
+
+| Dataset | Task              |  PSNR |SSIM  | Link |
+|---------|-------------------|-------|------|------|
+| FiveK   | photo retouching | 28.07  | 0.947 |[local](./pretrained_models/Ima-RGB-C 2024.01.13--20-38-53)|
+| FiveK   | tone mapping      |27.12|0.936    |[local](./pretrained_models/Ima-XYZ-C 2024.01.14--15-39-37)|
+| ppr10K  | photo retouching  | 27.08   |0.949|[local](./pretrained_models/PPR-RGB-a 2024.01.15--10-45-36)|
+
+You can evaluate  models in `./pretrained_models/`. To conduct testing, please use the following commands:
 
 
 ```shell
