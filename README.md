@@ -116,11 +116,11 @@ python test.py
 ### Trained models
 We provide trained models
 
-| Dataset | Task              |  PSNR |SSIM  | Link |
+| Dataset | Task              |  PSNR |SSIM  | Path |
 |---------|-------------------|-------|------|------|
-| FiveK   | photo retouching | 28.07  | 0.947 |[local](pretrained_models/Ima-RGB-C 2024.01.13--20-38-53)|
-| FiveK   | tone mapping      |27.12|0.936    |[local](pretrained_models/Ima-XYZ-C 2024.01.14--15-39-37)|
-| ppr10K  | photo retouching  | 27.08   |0.949|[local](pretrained_models/PPR-RGB-a 2024.01.15--10-45-36)|
+| FiveK   | photo retouching | 28.07  | 0.947 |pretrained_models/Ima-RGB-C 2024.01.13--20-38-53|
+| FiveK   | tone mapping      |27.12|0.936    |pretrained_models/Ima-XYZ-C 2024.01.14--15-39-37|
+| ppr10K  | photo retouching  | 27.08   |0.949|pretrained_models/PPR-RGB-a 2024.01.15--10-45-36|
 
 You can evaluate  models in `./pretrained_models/`. To conduct testing, please use the following commands:
 
