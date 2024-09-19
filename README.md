@@ -89,6 +89,10 @@ Download link for simulating infrared image and text data
 
 
 
+## M3FD-E dataset
+We extend the M3FD dataset by adding simulating infrared and image-enhanced ground truth images, naming the new dataset ‘M3FD-E’. Aiming to provide a valuable benchmark for advancing research in this important task.
+You can download it from [Google Driver](https://drive.google.com/drive/folders/1-Nk8PeCJYrhqzBPzTXwxJfxbspS_hSSL?usp=sharing)
+
 ## Training
 
 - On FiveK-sRGB (for photo retouching)
